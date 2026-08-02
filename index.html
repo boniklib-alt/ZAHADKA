@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff5c8a" />
+  <title>Запрошення для Руслани ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Decorative layers are created by JavaScript, so the page stays lightweight. -->
+  <div class="ambient" aria-hidden="true"></div>
+  <div id="hearts" class="hearts" aria-hidden="true"></div>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <main class="page-shell">
+    <button id="musicButton" class="music-button" type="button" aria-label="Увімкнути або вимкнути музику" aria-pressed="false">
+      <span aria-hidden="true">♫</span><span class="music-label">Музика</span>
+    </button>
+
+    <section class="card" aria-live="polite">
+      <div class="card-glow" aria-hidden="true"></div>
+      <p class="eyebrow">маленьке запрошення для Руслани</p>
+      <div class="progress" aria-label="Прогрес запитань"><span id="progressFill"></span></div>
+      <p id="stepCounter" class="step-counter">1 / 10</p>
+
+      <div id="questionView" class="view view--active">
+        <div id="questionIcon" class="question-icon" aria-hidden="true">💌</div>
+        <h1 id="questionTitle">Руслано, я хочу запросити тебе на побачення</h1>
+        <p id="questionText">Без поспіху й зайвого пафосу — просто на один гарний вечір.</p>
+        <div id="answers" class="answers">
+          <button id="yesButton" class="button button--yes" type="button">Так ❤️</button>
+          <button id="noButton" class="button button--no" type="button">Ні</button>
+        </div>
+        <p id="hint" class="hint">Обирай серцем ✨</p>
+      </div>
+
+      <div id="celebrationView" class="view celebration" hidden>
+        <div class="celebration-heart" aria-hidden="true">❤</div>
+        <h1>Тоді до зустрічі</h1>
+        <p>Деталі залишу маленьким сюрпризом. Побачимось увечері ✨</p>
+        <p class="personal-note">Я не знав, як запросити тебе, тому вирішив зробити для тебе цей сайт — щоб запросити на побачення.</p>
+        <button id="replayButton" class="text-button" type="button">Пройти історію ще раз</button>
+      </div>
+    </section>
+    <p class="footer-note">зроблено з думкою про тебе <span>❤</span></p>
+  </main>
+
+  <!-- Add your own .mp3 beside this file and set its source in script.js. -->
+  <audio id="backgroundMusic" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
